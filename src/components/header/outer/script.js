@@ -9,8 +9,8 @@ export default {
     data() {
         return {
             navs: [
-                { home: 'javsacript:;', title: 'ВВОЙТИ' },
-                { home: 'javsacript:;', title: 'РЕГИСТРАЦИЯ' },
+                { home: 'login', title: 'ВВОЙТИ' },
+                { home: 'sign', title: 'РЕГИСТРАЦИЯ' },
                 { home: 'javsacript:;', title: 'API' },
                 { home: 'javsacript:;', title: 'О КРИПТОВАЛЮТЕ' }
             ]

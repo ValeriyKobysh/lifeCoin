@@ -1,7 +1,8 @@
 <template lang="pug">
     #app
-        transition
-            router-view
+        router-view(name="header" :key="'header'")
+
+        router-view(:key="'content'")
 
         footer-comp
 </template>

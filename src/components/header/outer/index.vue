@@ -5,7 +5,7 @@
         nav.header__nav
             ul.header__nav-list.list
                 li.header__nav-item(v-for="nav, index in navs" :key="index")
-                    a.header__nav-link.link(:href="nav.home")  {{nav.title}}
+                    router-link.header__nav-link.link(:to="{ name: nav.home }") {{nav.title}}
 
         .header__search
             label.header__search-lbl

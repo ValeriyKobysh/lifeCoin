@@ -37,3 +37,36 @@ body{
     }
 }
 
+.fade-enter-active, .fade-leave-active {
+    animation-duration: 250ms;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+    position: absolute;
+}
+
+.fade-enter-active{
+    animation-name: fadeIn;
+}
+
+.fade-leave-active{
+    animation-name: fadeOut;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+    }
+  }

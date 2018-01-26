@@ -1,6 +1,5 @@
 <template lang='pug'>
     .index-page.content
-        header-comp
 
         transactions
 

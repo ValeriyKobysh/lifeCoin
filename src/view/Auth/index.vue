@@ -1,8 +1,10 @@
 <template lang='pug'>
-    .auth-page
-        header-comp
+    .auth-page.content
 
-        div content
+        .auth-page__content
+            transition(tag="div" name="fade"  mode="out-in" appear)
+                router-view
+
 </template>
 
 <script src='./script.js'></script>

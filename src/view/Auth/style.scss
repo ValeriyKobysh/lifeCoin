@@ -1,0 +1,25 @@
+.auth-page{
+    background-image: url(~img/auth-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    &:after{
+        content: '';
+        display: flex;
+        @include size(100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(bg-color(grey-dark), .87);
+    }
+
+    &__content{
+        padding: 50px 0;
+        display: flex;
+    }
+}

@@ -1,7 +1,6 @@
 import { mapState, mapActions, mapGetters, mapMutations } from 'vuex'
 
 //#region import components
-import headerComp from '../../components/header/outer'
 import transactions from '../../components/transactions'
 //endregion
 
@@ -21,7 +20,7 @@ export default {
         }
     },
     components: {
-        headerComp, transactions
+        transactions
     },
     methods: {
         getRandomNumber(min, max){
