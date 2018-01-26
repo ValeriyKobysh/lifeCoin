@@ -5,13 +5,7 @@ import VueResource from 'vue-resource'
 Vue.use(Vuex);
 Vue.use(VueResource);
 //#region import modules
-import auth from './modules/auth';
 import index from './modules/index';
-import trade from './modules/trade';
-import referals from './modules/referals';
-import history from './modules/history';
-import output from './modules/output';
-import profile from './modules/profile';
 //endregion
 
 const store = new Vuex.Store({
@@ -25,7 +19,7 @@ const store = new Vuex.Store({
 
     },
     modules: {
-        auth, index, trade, referals, history, output, profile
+        index
     }
 })
 

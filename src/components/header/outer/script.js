@@ -1,12 +1,19 @@
 import { mapState, mapActions, mapGetters, mapMutations } from 'vuex'
 
-const icon = []
+//#region import icons
+import searchIcon from '../../../assets/icons/search-icon.svg'
+//endregion
 
 export default {
     name: 'header-outer',
     data() {
         return {
-
+            navs: [
+                { home: 'javsacript:;', title: 'ВВОЙТИ' },
+                { home: 'javsacript:;', title: 'РЕГИСТРАЦИЯ' },
+                { home: 'javsacript:;', title: 'API' },
+                { home: 'javsacript:;', title: 'О КРИПТОВАЛЮТЕ' }
+            ]
         }
     },
     computed: {
@@ -18,4 +25,7 @@ export default {
     methods: {
 
     },
+    components: {
+        searchIcon
+    }
 }

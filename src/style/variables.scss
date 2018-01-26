@@ -1,6 +1,6 @@
 // ### BASE ###
     $basefz: 16px!default;
-    $baseff: 'Open Sans', sans-serif!default;
+    $baseff: 'Roboto', sans-serif!default;
     $countColumnsDesktop: 12;
     $countColumnsTablet: 8;
     $countColumnsMobile: 4;
@@ -8,32 +8,29 @@
 // ### COLORS ###
     $white-color: #ffffff;
     $black-color: black;
-    $accent-color: #279ad7;
-    $accent-dark-color: #0a76ae;
-    $grey-color: #363636;
-    $green-color: #08faa2;
-    $error-color: #f5a314;
+    $orange-color: #ca892d;
+    $blue-color: #00b7f4;
+    $grey-light-color: #f0f0f0;
+    $grey-medium-color: #a8a9aa;
+    $grey-dark-color: #525252;
 
 $bg-color: (
     white: $white-color,
-    overlay: $accent-dark-color,
-    grey: $grey-color,
-    accent: $accent-color,
-    error: $error-color
+    grey-dark: $grey-dark-color,
+    grey-medium: $grey-medium-color,
+    grey-light: $grey-light-color,
+    orange: $orange-color,
+    blue: $blue-color
 );
 
 $ui-color: (
-    success: $green-color,
-    error: $error-color
+
 );
 
 $text-color: (
-    grey: $grey-color,
-    white: $white-color,
-    title: lighten($grey-color, 1.5%),
-    text: lighten($grey-color, 6%),
-    accent: $accent-color,
-    green: $green-color
+    light: $white-color,
+    blue: $blue-color,
+    dark: $grey-dark-color
 );
 
 // ###BREAKPOINTS###

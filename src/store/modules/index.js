@@ -1,40 +1,47 @@
 const index = {
     state: {
-        statistic: [],
-        reviews: []
+        transactions: []
     },
     getters: {
-        Statistic(state){ return state.statistic; },
-        Reviews(state){ return state.reviews; }
+        Transactions(state){ return state.transactions; }
     },
     mutations: {
-        updateStatistic(state, payload){ state.statistic = payload; },
-        updateReviews(state, payload){ state.reviews = payload; },
+        updateTransactions(state, payload){
+            payload.forEach(element => {
+                state.transactions.push(element);
+            });
+        },
+        removeTransaction({ transactions }, payload){
+            transactions.splice(0, 1);
+        }
     },
     actions: {
-        fetchStatistic({ rootGetters, commit, state }){
+        fetchTransactions({ rootGetters, commit }){
             const { $http } = rootGetters;
 
-            if(state.statistic.length == 0){
-                $http.get('/index.php?p1=/get_statistic/')
-                    .then(response => {
-                        commit('updateStatistic', response.body.result)
-                    }, error => {
-                        console.log(error);
-                    })
-            }
+            return new Promise(resolve => {
+                $http.get('https://api.myjson.com/bins/1dp0jd')
+                .then(response => {
+                    commit('updateTransactions', response.body);
+                    resolve();
+                }, error => {
+                    console.log(error);
+                })
+                
+            })
         },
-        fetchStatistic({ rootGetters, commit, state }){
+        newTransaction({ rootGetters, commit }){
             const { $http } = rootGetters;
 
-            if(state.reviews.length == 0){
-                $http.get('/index.php?p1=/get_reviews/')
-                    .then(response => {
-                        commit('updateReviews', response.body.result)
-                    }, error => {
-                        console.log(error);
-                    })
-            }
+            return new Promise(resolve => {
+                $http.get('https://api.myjson.com/bins/r4gzt')
+                .then(response => {
+                    commit('updateTransactions', response.body);
+                    resolve()
+                }, error => {
+                    console.log(error);
+                })
+            })
         }
     }
 }

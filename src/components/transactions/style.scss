@@ -1,0 +1,81 @@
+.transactions{
+    padding: 60px 0 100px;
+    height: 550px;
+    background-image: url('~img/transactions-bg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+    position: relative;
+
+    &:before{
+        content: '';
+        display: flex;
+        @include size(100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(bg-color(grey-dark), .87);
+    }
+
+    * {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__heading{
+        color: text-color(light);
+        font-size: rem(20px);
+        font-weight: 400;
+        margin-bottom: 45px;
+        text-transform: uppercase;
+    }
+
+    &__table{
+        width: 100%;
+        border-spacing: 0;
+    }
+
+    &__header, &__body{
+
+        td{
+            font-size: rem(14px);
+            color: text-color(light);
+            text-align: center;
+        }
+    }
+
+    &__header td{
+        border-bottom: 3px solid bg-color(orange);
+        padding-bottom: 20px;
+    }
+
+    &__body{
+        overflow: hidden;
+    }
+
+    &__body tr{
+        height: 57px;
+    }
+
+    &__body td{
+        // padding: 20px 0;
+        border-bottom: 1px solid bg-color(grey-medium);
+
+        &.mark{
+            color: text-color(blue);
+        }
+    }
+}
+
+.flip-enter-active{
+    transition: all 1s;
+}
+
+.flip-enter{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+.flip-leave-active{
+    opacity: 0;
+}
