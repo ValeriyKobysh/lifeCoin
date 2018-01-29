@@ -103,4 +103,11 @@
             margin-right: 0;
         }
     }
+
+    &__exit{
+        margin-left: auto;
+        color: text-color(light);
+        text-transform: uppercase;
+        font-size: rem(12px);
+    }
 }

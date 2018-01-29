@@ -1,0 +1,43 @@
+.sidebar{
+    @include size(360px, auto);
+    box-shadow: 0 0 13px rgba(98, 98, 98, 0.25);
+    padding: 30px;
+
+    &__heading{
+        font-weight: 400;
+        font-size: rem(16px);
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+
+        &:after{
+            content: '';
+            display: flex;
+            margin-left: 5px;
+            @include size(100%, 1px);
+            background-color: bg-color(grey-dark);
+        }
+    }
+
+    &__item{
+        margin-bottom: 30px;
+    }
+
+    &__link{
+        @include aligment($jc: start);
+        color: text-color(dark);
+        fill: text-color(dark);
+        text-transform: uppercase;
+        font-size: rem(18px);
+        @include transition();
+
+        svg{
+            margin-right: 25px;
+        }
+
+        &:hover, &.active{
+            fill: text-color(orange);
+            color: text-color(orange);
+        }
+    }
+}

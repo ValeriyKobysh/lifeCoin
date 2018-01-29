@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic-ext');
 @import './variables.scss';
 
 ul, ol{
@@ -29,7 +29,7 @@ body{
     font-size: $basefz;
     font-weight: 400;
     color: text-color(text);
-    min-width: $xs;
+    min-width: 1500px;
 
     & * {
         flex-shrink: 0;

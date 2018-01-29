@@ -1,7 +1,11 @@
 <template lang='pug'>
-    .room.content 12313123123 room
+    .room.content
+        sidebar
+
+        router-view.room__content
+
 </template>
 
 <script src='./script.js'></script>
 
-<style lang='scss' src='./style.scss' scoped></style>
+<style lang='scss' src='./style.scss'></style>

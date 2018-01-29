@@ -16,6 +16,10 @@ import headerInner from '../components/header/inner'
 import login from '../components/auth/login'
 import sign from '../components/auth/sign'
 import restore from '../components/auth/restore'
+import wallet from '../view/Room/wallet'
+import refill from '../view/Room/refill'
+import send from '../view/Room/send'
+import faq from '../view/Room/faq'
 //endregion
 
 export default new VueRouter(
@@ -47,7 +51,15 @@ export default new VueRouter(
                 components: {
                     header: headerInner,
                     default: roomPage
-                }
+                },
+                children: [
+                    { name: 'wallet', path: '', component: wallet },
+                    { name: 'refill', path: 'refill', component: refill },
+                    { name: 'send', path: 'send', component: send },
+                    { name: 'history', path: 'history' },
+                    { name: 'setting', path: 'setting' },
+                    { name: 'faq', path: 'faq', component: faq }
+                ]
             }
         ]
     }

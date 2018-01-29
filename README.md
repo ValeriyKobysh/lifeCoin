@@ -1,6 +1,6 @@
 # life-coin
 
-> A Vue.js project
+> A LifeCoin project
 
 ## Build Setup
 
@@ -13,6 +13,9 @@ npm run dev
 
 # build for production with minification
 npm run build
-```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Pages
+* [Index page](https://valeriykobysh.github.io/lifecoin/dist) - Index
+* [Auth page](https://valeriykobysh.github.io/lifecoin/dist/auth) - Auth pages
+* [Profile page](https://valeriykobysh.github.io/lifecoin/dist/room) - Profile page
+

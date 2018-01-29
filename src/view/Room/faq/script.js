@@ -1,7 +1,7 @@
-//region import components
-import sidebar from '../../components/sidebar'
-//endregion
 export default {
+    metaInfo: {
+        title: 'Вопрос/ответ'
+    },
     data() {
         return {
             
@@ -17,6 +17,6 @@ export default {
         
     },
     components: {
-        sidebar
+        
     },
 }

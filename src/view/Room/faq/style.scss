@@ -1,0 +1,36 @@
+.faq{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+
+    &__list{
+        padding: 45px 40px;
+        margin: 0;
+    }
+
+    &__item{
+        margin-bottom: 60px;
+        color: text-color(dark);
+        font-size: rem(18px);
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+
+        ol, ul{
+            margin-left: 15px;
+        }
+
+        li{
+            margin-bottom: 15px;
+        }
+    }
+
+    &__title{
+        color: text-color(orange);
+        font-weight: 500;
+        font-size: rem(26px);
+        margin-bottom: 20px;
+        display: block;
+    }
+}

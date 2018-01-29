@@ -1,0 +1,126 @@
+.refill{
+    flex-shrink: 1;
+
+    &__menu{
+        padding: 25px;
+        display: flex;
+        margin-bottom: 80px;
+
+        &-list{
+             display: flex;
+             align-items: center;
+        }
+
+        &-item{
+            color: text-color(medium);
+            font-size: rem(18px);
+            text-transform: uppercase;
+            margin-right: 25px;
+            user-select: none;
+            cursor: pointer;
+            @include transition();
+
+            &_active{
+                color: text-color(orange);
+                text-decoration: underline;
+            }
+
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+
+        &-export{
+            margin-left: auto;
+            color: text-color(blue);
+            font-size: rem(14px);
+            cursor: pointer;
+        }
+    }
+
+    &__heading{
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+    
+    &__desc{
+        font-size: rem(18px);
+        margin-bottom: 60px;
+        display: block;
+    }
+    
+    &__products{
+        max-width: 1050px;
+        margin: 0 auto 40px;
+        text-align: center;
+        color: text-color(dark);
+        
+        &-list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        &-item{
+            width: 330px;
+            height: 400px;
+            box-shadow: 0 0 13px rgba(98, 98, 98, 0.15);
+            background-color: bg-color(grey-light);
+            padding: 30px 15px; 
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-header{
+            border-bottom: 1px solid bg-color(grey-medium);
+            color: text-color(orange);
+            font-size: rem(30px);
+            padding-bottom: 20px;
+            flex-shrink: 0;
+        }
+
+        &-body{
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: text-color(dark);
+            font-size: rem(20px);
+        }
+
+        &-count{
+            font-size: rem(70px);
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        &-footer{
+            flex-shrink: 0;
+            color: text-color(medium);
+            font-size: rem(14px);
+        }
+
+        &-link{
+            background-color: bg-color(orange);
+            @include aligment();
+            @include size(220px, 40px);
+            border-radius: 5px;
+            margin: 15px auto 0;
+            font-size: rem(20px);
+            color: text-color(light);
+        }
+    }
+
+    &__support{
+        text-align: center;
+        margin-bottom: 80px;
+        font-size: rem(18px);
+        color: text-color(dark);
+
+        .mark{
+            color: text-color(blue);
+        }
+    }
+}

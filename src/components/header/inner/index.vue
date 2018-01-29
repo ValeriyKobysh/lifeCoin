@@ -1,5 +1,8 @@
 <template lang='pug'>
-    header.header header inner
+    header.header
+        .header__logo LIFEKOIN
+
+        router-link.header__exit(:to="{ name: 'home' }") ВЫХОД
 
 </template>
 

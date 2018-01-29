@@ -6,6 +6,7 @@ Vue.use(Vuex);
 Vue.use(VueResource);
 //#region import modules
 import index from './modules/index';
+import refill from './modules/refill'
 //endregion
 
 const store = new Vuex.Store({
@@ -19,7 +20,7 @@ const store = new Vuex.Store({
 
     },
     modules: {
-        index
+        index, refill
     }
 })
 
