@@ -15,7 +15,8 @@ npm run dev
 npm run build
 
 ## Pages
-* [Index page](https://valeriykobysh.github.io/lifecoin/dist) - Index
-* [Auth page](https://valeriykobysh.github.io/lifecoin/dist/auth) - Auth pages
-* [Profile page](https://valeriykobysh.github.io/lifecoin/dist/room) - Profile page
+
+* [Index page](https://valeriykobysh.github.io/lifeCoin/) - Index
+* [Auth page](https://valeriykobysh.github.io/lifeCoin/auth) - Auth pages
+* [Profile page](https://valeriykobysh.github.io/lifeCoin/room) - Profile page
 
